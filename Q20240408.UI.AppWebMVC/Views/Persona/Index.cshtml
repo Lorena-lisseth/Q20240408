@@ -60,9 +60,16 @@
             <td>
                 @Html.DisplayFor(modelItem => item.SueldoQ)
             </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.StatusQ)
-            </td>
+                <td>
+                    @if (item.StatusQ == 1)
+                    {
+                        <span class="badge badge-success">Activo</span>
+                    }
+                    else
+                    {
+                        <span class="badge badge-danger">Inactivo</span>
+                    }
+                </td>
             <td>
                     <a class="btn btn-info btn-sm"@Html.ActionLink("Editar", "Edit", new { id = item.Id })></a>
                     <a class="btn btn-secondary btn-sm"@Html.ActionLink("Detalles", "Details", new { id = item.Id })></a>

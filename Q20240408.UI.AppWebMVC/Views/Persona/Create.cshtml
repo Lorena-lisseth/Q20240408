@@ -33,9 +33,12 @@
                 <input asp-for="SueldoQ" class="form-control" />
                 <span asp-validation-for="SueldoQ" class="text-danger"></span>
             </div>
-            <div class="form-group">
-                <label asp-for="StatusQ" class="control-label"></label>
-                <input asp-for="StatusQ" class="form-control" />
+            <div class="form-group mb-3">
+                <label asp-for="StatusQ" class="form-label">Estatus</label>
+                <select asp-for="StatusQ" class="form-select">
+                    <option value="1">Activo</option>
+                    <option value="2">Inactivo</option>
+                </select>
                 <span asp-validation-for="StatusQ" class="text-danger"></span>
             </div>
             <div class="form-group">
