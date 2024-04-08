@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Q20240408.EntidadesDeNegocio\Q20240408.EntidadesDeNegocio.csproj" />
+    <ProjectReference Include="..\Q20240408.LogicaDeNegocio\Q20240408.LogicaDeNegocio.csproj" />
+  </ItemGroup>
+
+</Project>
